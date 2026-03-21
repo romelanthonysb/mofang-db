@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+* { box-sizing: border-box; }
+
+
+/* Cube Thumbnail Gallery */
+
+#cubegallery {
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+
+.cubecard {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+  border: 2px solid blue;
+  padding: 5px;
+  margin: 5px;
+}
+
+.cubecard:hover {
+  background-color: rgba(224, 224, 255, 1.0);
+}
+
+.cubecard  a {
+  margin: 0px;
+  padding: 0px;
+}
+
+.cubecard  img {
+  width: 180px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nameline {
+  width: 200px;
+  margin: 0.1em;
+  font-family: Questrial, "Century Gothic", sans-serif;
+  font-size: 1em;
+  color: black;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.modelline {
+  width: 200px;
+  margin: 0.1em;
+  font-family: Inconsolata, Consolas, monospace;
+  font-size: 1em;
+  color: black;
+  text-align: left;
+}
+

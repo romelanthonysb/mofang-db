@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+* { box-sizing: border-box; }
+
+/* Set Up Fonts */
+
+@font-face {
+  font-family: Questrial;
+  src: url(fonts/Questrial-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inconsolata;
+  src: url(fonts/Inconsolata-VariableFont_wdth,wght.ttf);
+}
+
+/* Main font assignments */
+
+h1, h2, h3 {
+  font-family: Questrial, "Century Gothic", sans-serif;
+}
+
+p, li {
+  font-family: Georgia, serif;
+}
+
+code, samp, pre, kbd, th, td {
+  font-family: Inconsolata, Consolas, monospace;
+}
+
+/* Common webpage areas */
+
+body {
+  width: 75vw;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: rgba(48, 48, 48, 1.0);
+  padding: 15px; 
+}
+
+main {
+  background-color: rgba(255, 255, 255, 1.0);
+  padding: 0px; 
+}
+
+footer {
+  background-color: rgba(192, 192, 192, 1.0);
+  padding: 15px; 
+}
+
+/* Navigation Tiles */
+.tile {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 120px; 
+  padding: 10px;
+  margin-left: 0px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.slimtile {
+  display: inline-block;
+  position: relative;
+  min-width: 120px;
+  padding: 10px;
+  margin-left: 0px;
+  margin-right: 5px;
+}
+
+.tile  a {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: white;
+  font-size: 1.25em;
+  font-family: Questrial, "Century Gothic", sans-serif;
+  text-decoration: none;
+}
+
+.slimtile  a {
+  color: white;
+  font-size: 1.25em;
+  font-family: Questrial, "Century Gothic", sans-serif;
+  text-decoration: none;
+}
+
+.tile  a:hover, .slimtile  a:hover {
+  text-decoration: underline;
+}
+
+.homepage    { background-color: darkgray; }
+.allcubes    { background-color: blue; }
+.collections { background-color: darkorange; }
+.articles    { background-color: darkgreen; }
+.links       { background-color: darkred; }
+.contact     { background-color: indigo; }
+
+/* Homepage/Index styles */
+
+#logomain {
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+#logoslim {
+  display: block;
+  width: 200px;
+}
+
+#top {
+  background-color: rgba(48, 48, 48, 1.0);
+  padding: 15px;
+}
+
+#homecenter {
+  text-align: center;
+}
+
+header h1 {
+  text-align: center;
+  color: rgba(255, 255, 0, 1.0);
+}
+
+#lastupdated {
+  font-family: Inconsolata, Consolas, monospace;
+  font-size: 1em;
+}

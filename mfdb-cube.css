@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+* { box-sizing: border-box; }
+
+#cubeview {
+  display: block;
+  float: left;
+  margin-left: 0px;
+  margin-right: 10px;
+  width: 40%;
+  min-width: 180px;
+  max-width: 400px;
+}
+
+/* Cube Information Display Styles */
+
+#cubemain {
+  width: 100%;
+}
+
+h1#cubename {
+  font-family: Questrial, "Century Gothic", sans-serif;
+  font-size: 2em;
+  color: black;
+  margin-bottom: 0em;
+}
+
+#cubemake {
+  color: rgba(64, 64, 64, 1.0);
+}
+
+#cubemodel { 
+  color: rgba(255, 255, 255, 1.0);
+  background-color: rgba(0, 0, 0, 1.0);
+  border: 1px solid rgba(64, 64, 64, 1.0);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cubeedition {
+  text-decoration: underline;
+}
+
+p#cubeids {
+  font-family: Inconsolata, Consolas, monospace;
+  font-size: 1.5em;
+  color: rgba(32, 32, 32, 1.0);
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+#cubemodelno {
+  font-weight: bold;
+}
+#cubeyear {}
+
+/* Writeup (main article styles) */
+
+#writeup {}
+
+#writeup:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.writeupref {
+  /* border: 2px solid rgba(255, 0, 128, 1.0); */
+  background-color: rgba(192, 0, 128, 0.5);
+  padding-left: 1em;
+}
+
+.writeupref  * {
+  font-family: Inconsolata, Consolas, monospace;
+}
+
+.writeupref  a {
+  background-color: rgba(128, 0, 255, 1.0);
+  color: rgba(255, 255, 255, 1.0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Specifications (specs) Tables */
+
+#cubespecs  table {
+  width: auto;
+}
+
+#cubespecs  caption {
+  margin-top: 1em;
+  text-align: left;
+  font-family: Questrial, "Century Gothic", sans-serif;
+  font-size: 1.2em;
+  text-decoration: underline;
+
+}
+
+#cubespecs  tr {
+  border-bottom: 1px solid gray;
+  width: inherit;
+}
+
+#cubespecs  th {
+  width: 30%;
+  padding-right: 0.5em;
+  color: black;
+  font-family: Questrial, "Century Gothic", sans-serif;
+  font-size: 1.0em;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+}
+
+#cubespecs  td {
+  width: 70%;
+  padding-left: 0.5em;
+  color: black;
+  font-family: Inconsolata, Consolas, monospace;
+  font-size: 1.15em;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+#cubespecs  td:hover {
+  background-color: lightblue;
+}
+
+/* Specific Tables (booleans and details) */
+
+#nomenclature {
+  display: block;
+  border-collapse: collapse;
+}
+
+#booleans {
+  display: block;
+  border-collapse: collapse;
+}
+
+#details {
+  display: block;
+  border-collapse: collapse;
+}
+
+/* Photo Thumbnail Gallery */
+
+#gallery {
+  display: block;
+  width: 100%;
+  border: 2px solid darkgray;
+  background-color: lightblue;
+  padding: 5px;
+}
+
+.photocard {
+  display: inline-block;
+  width: 180px;
+  vertical-align: top;
+}
+
+.photocard  img {
+  width: 180px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.photocard  .capt {
+  width: 180px;
+  margin: 0.1em;
+  font-size: 0.95em;
+  font-family: Questrial, "Century Gothic", sans-serif;
+  color: black;
+  text-align: left;
+}
+
