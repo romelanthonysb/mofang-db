@@ -22,6 +22,7 @@ h1, h2, h3 {
 
 p, li {
   font-family: Georgia, serif;
+  font-size: 1.15em;
 }
 
 code, samp, pre, kbd, th, td {
@@ -35,6 +36,13 @@ body {
   min-width: 400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Minimize margins when printed */
+@media print {
+  body {
+    width: 100%;
+  }
 }
 
 header {
@@ -93,6 +101,11 @@ footer {
 
 .tile  a:hover, .slimtile  a:hover {
   text-decoration: underline;
+}
+
+@media print {
+  .tile  a { color: black; text-decoration: underline; }
+  .slimtile  a { color: black; text-decoration: underline; }
 }
 
 .homepage    { background-color: darkgray; }

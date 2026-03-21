@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-* { box-sizing: border-box; }
-
 #cubeview {
   display: block;
   float: left;
@@ -30,11 +28,15 @@ h1#cubename {
 }
 
 #cubemodel { 
-  color: rgba(255, 255, 255, 1.0);
-  background-color: rgba(0, 0, 0, 1.0);
+  color: white; 
+  background-color: black;
   border: 1px solid rgba(64, 64, 64, 1.0);
   padding-left: 5px;
   padding-right: 5px;
+}
+
+@media print {
+  #cubemodel { color: black; background-color: white; border: 1px solid black; }
 }
 
 #cubeedition {
@@ -76,9 +78,14 @@ p#cubeids {
 
 .writeupref  a {
   background-color: rgba(128, 0, 255, 1.0);
-  color: rgba(255, 255, 255, 1.0);
+  color: white; 
   font-weight: bold;
   text-decoration: none;
+}
+
+/* Make the writeup link visible when printed */
+@media print {
+  .writeupref  a { color: black; text-decoration: underline; }
 }
 
 /* Specifications (specs) Tables */
@@ -161,6 +168,7 @@ p#cubeids {
   vertical-align: top;
 }
 
+
 .photocard  img {
   width: 180px;
   margin: 0px;
@@ -176,3 +184,9 @@ p#cubeids {
   text-align: left;
 }
 
+/* Make photo cards smaller when printed */
+@media print {
+  .photocard        { width: 120px; }
+  .photocard  img   { width: 120px; }
+  .photocard  .capt { width: 120px; }
+}
