@@ -90,8 +90,14 @@ p#cubeids {
 
 /* Specifications (specs) Tables */
 
+#cubespecs {
+  width: 100%;
+}
+
 #cubespecs  table {
-  width: auto;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
 
 #cubespecs  caption {
@@ -105,7 +111,10 @@ p#cubeids {
 
 #cubespecs  tr {
   border-bottom: 1px solid gray;
-  width: inherit;
+}
+
+#cubespecs  tr:hover {
+  background-color: rgba(239, 239, 239, 1.0);
 }
 
 #cubespecs  th {
@@ -117,6 +126,8 @@ p#cubeids {
   font-weight: normal;
   text-align: right;
   vertical-align: top;
+  /* white-space: nowrap; */
+  overflow-x: hidden;
 }
 
 #cubespecs  td {
@@ -131,26 +142,21 @@ p#cubeids {
   word-wrap: break-word;
 }
 
-#cubespecs  td:hover {
-  background-color: lightblue;
-}
-
-/* Specific Tables (booleans and details) */
+/* Specific Tables (booleans and details) */ 
 
 #nomenclature {
-  display: block;
-  border-collapse: collapse;
+  display: table;
 }
 
 #booleans {
-  display: block;
-  border-collapse: collapse;
+  display: table;
 }
 
 #details {
-  display: block;
-  border-collapse: collapse;
+  display: table;
 }
+
+
 
 /* Photo Thumbnail Gallery */
 
@@ -158,7 +164,7 @@ p#cubeids {
   display: block;
   width: 100%;
   border: 2px solid darkgray;
-  background-color: lightblue;
+  background-color: aliceblue;
   padding: 5px;
 }
 
