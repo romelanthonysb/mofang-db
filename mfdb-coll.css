@@ -51,3 +51,15 @@
   text-align: left;
 }
 
+/* Jewel thumbnail for Collections page */
+
+.collcontainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.jewel {
+  float: right;
+  width: 150px;
+}

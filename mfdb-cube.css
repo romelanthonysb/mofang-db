@@ -60,6 +60,7 @@ p#cubeids {
 
 #writeup {}
 
+/* Create a section break for floats */
 #writeup:after {
   content: "";
   display: table;

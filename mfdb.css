@@ -27,6 +27,8 @@ p, li {
 
 code, samp, pre, kbd, th, td {
   font-family: Inconsolata, Consolas, monospace;
+  font-size: 1.25em;
+  font-weight: normal;
 }
 
 /* Common webpage areas */
@@ -115,8 +117,53 @@ footer {
 .links       { background-color: darkred; }
 .contact     { background-color: indigo; }
 
+/* Synopsis boxes (collections, articles, etc.) */
 
-/* Ad-hoc styles (highlight, late-breaking, etc.) */
+.synopsis {
+  display: inline-block;
+  width: calc(50% - 10px);
+  min-width: 300px;
+  border: 1px solid black;
+  padding: 5px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.synopsis:hover {
+  background-color: rgba(239, 239, 239, 1.0);
+}
+
+.synopsis  .synheading {
+  font-family: Questrial, "Century Gothic", sans-serif;
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
+}
+
+.synopsis  .syndata {
+  font-family: Inconsolata, Consolas, monospace;
+  font-size: 1.15em;
+}
+
+/*
+.synopsis:after {
+  clear: both;
+  
+}
+*/
+
+/* Ad-hoc styles (highlight, late-breaking, figures/data etc.) */
+
+hr {
+  color: rgba(48, 48, 48, 1.0);
+  height: 1px;
+}
+
+.assocdata {
+  border: 1px solid gray;
+  padding: 2px;
+}
+
 .latebreaking {
   border: 1px solid gray;
   background-color: yellow;
@@ -125,6 +172,16 @@ footer {
 @media print {
   .latebreaking { background-color: white; font-weight: bold; }
 }
+
+footer  p {
+  font-size: 1.0em;
+}
+
+code.mfdb {
+  font-size: inherit;
+}
+
+pre.lastupdated {}
 
 /* Homepage/Index styles */
 
