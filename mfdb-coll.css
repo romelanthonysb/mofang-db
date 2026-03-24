@@ -15,6 +15,7 @@
   border: 2px solid blue;
   padding: 5px;
   margin: 5px;
+  overflow-wrap: normal;
 }
 
 .cubecard:hover {
@@ -24,6 +25,7 @@
 .cubecard  a {
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
 }
 
 .cubecard  img {
@@ -39,7 +41,15 @@
   font-size: 1.1em;
   color: black;
   text-align: left;
-  overflow-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Display the full name line when moused over */
+.nameline:hover {
+  white-space: normal;
+  overflow: visible;
 }
 
 .modelline {
