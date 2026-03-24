@@ -36,7 +36,7 @@
   width: 200px;
   margin: 0.1em;
   font-family: Questrial, "Century Gothic", sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
   color: black;
   text-align: left;
   overflow-wrap: break-word;
@@ -51,7 +51,28 @@
   text-align: left;
 }
 
+/* Make cube cards smaller when printed and on smaller screens */
+
+@media print {
+  .cubecard { width: 150px; }
+  .cubecard  img { width: 140px; }
+  .nameline { width: 150px; }
+  .modelline { width: 150px; }
+}
+
+@media screen and (max-width: 565px) {
+  .cubecard { width: 150px; }
+  .cubecard  img { width: 140px; }
+  .nameline { width: 150px; }
+  .modelline { width: 150px; }
+}
+
 /* Jewel thumbnail for Collections page */
+
+.jewel {
+  float: right;
+  width: 150px;
+}
 
 .collcontainer:after {
   content: "";
@@ -59,7 +80,3 @@
   clear: both;
 }
 
-.jewel {
-  float: right;
-  width: 150px;
-}
