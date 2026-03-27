@@ -15,7 +15,6 @@
   border: 2px solid blue;
   padding: 5px;
   margin: 5px;
-  overflow-wrap: normal;
 }
 
 .cubecard:hover {
@@ -35,8 +34,7 @@
 }
 
 .nameline {
-  width: 200px;
-  margin: 0.1em;
+  width: 186px;
   font-family: Questrial, "Century Gothic", sans-serif;
   font-size: 1.1em;
   color: black;
@@ -48,12 +46,12 @@
 
 /* Display the full name line when moused over */
 .nameline:hover {
-  white-space: normal;
   overflow: visible;
+  white-space: normal;
 }
 
 .modelline {
-  width: 200px;
+  width: 186px;
   margin: 0.1em;
   font-family: Inconsolata, Consolas, monospace;
   font-size: 1em;
@@ -67,7 +65,7 @@
   .cubecard { width: 150px; }
   .cubecard  img { width: 140px; }
   .nameline { width: 150px; }
-  .modelline { width: 150px; }
+  .modelline { width: 150px;  }
 }
 
 @media screen and (max-width: 565px) {
